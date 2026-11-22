@@ -1,0 +1,33 @@
+{
+    "target": "Product_Store_Sales_Total",
+    "features": [
+        "Product_Weight",
+        "Product_Sugar_Content",
+        "Product_Allocated_Area",
+        "Product_Type",
+        "Product_MRP",
+        "Store_Id",
+        "Store_Size",
+        "Store_Location_City_Type",
+        "Store_Type",
+        "Product_Id_char",
+        "Store_Age_Years",
+        "Product_Type_Category"
+    ],
+    "numeric_features": [
+        "Product_Weight",
+        "Product_Allocated_Area",
+        "Product_MRP",
+        "Store_Age_Years"
+    ],
+    "categorical_features": [
+        "Product_Sugar_Content",
+        "Product_Type",
+        "Store_Id",
+        "Store_Size",
+        "Store_Location_City_Type",
+        "Store_Type",
+        "Product_Id_char",
+        "Product_Type_Category"
+    ]
+}
