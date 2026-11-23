@@ -1,14 +1,17 @@
 services:
   backend-api:
-    build: ./backend_files
+    build: ./backend
     container_name: backend-api
     ports:
       - "7860:7860"
+    environment:
+      PORT: "7860"
+      MAX_BATCH_ROWS: "1000"
     networks:
       - superkart-network
 
   frontend-ui:
-    build: ./frontend_files
+    build: ./frontend
     container_name: frontend-ui
     ports:
       - "8501:8501"
