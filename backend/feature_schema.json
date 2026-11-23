@@ -1,33 +1,95 @@
 {
-    "target": "Product_Store_Sales_Total",
-    "features": [
-        "Product_Weight",
-        "Product_Sugar_Content",
-        "Product_Allocated_Area",
-        "Product_Type",
-        "Product_MRP",
-        "Store_Id",
-        "Store_Size",
-        "Store_Location_City_Type",
-        "Store_Type",
-        "Product_Id_char",
-        "Store_Age_Years",
-        "Product_Type_Category"
+  "target": "Product_Store_Sales_Total",
+  "features": [
+    "Product_Weight",
+    "Product_Sugar_Content",
+    "Product_Allocated_Area",
+    "Product_Type",
+    "Product_MRP",
+    "Store_Id",
+    "Store_Size",
+    "Store_Location_City_Type",
+    "Store_Type",
+    "Product_Id_char",
+    "Store_Age_Years",
+    "Product_Type_Category"
+  ],
+  "numeric_features": [
+    "Product_Weight",
+    "Product_Allocated_Area",
+    "Product_MRP",
+    "Store_Age_Years"
+  ],
+  "categorical_features": [
+    "Product_Sugar_Content",
+    "Product_Type",
+    "Store_Id",
+    "Store_Size",
+    "Store_Location_City_Type",
+    "Store_Type",
+    "Product_Id_char",
+    "Product_Type_Category"
+  ],
+  "numeric_defaults": {
+    "Product_Weight": 12.66,
+    "Product_Allocated_Area": 0.056,
+    "Product_MRP": 146.39499999999998,
+    "Store_Age_Years": 16.0
+  },
+  "categorical_values": {
+    "Product_Sugar_Content": [
+      "Regular",
+      "Low Sugar",
+      "No Sugar"
     ],
-    "numeric_features": [
-        "Product_Weight",
-        "Product_Allocated_Area",
-        "Product_MRP",
-        "Store_Age_Years"
+    "Product_Type": [
+      "Canned",
+      "Soft Drinks",
+      "Dairy",
+      "Meat",
+      "Health and Hygiene",
+      "Fruits and Vegetables",
+      "Baking Goods",
+      "Household",
+      "Starchy Foods",
+      "Others",
+      "Seafood",
+      "Frozen Foods",
+      "Snack Foods",
+      "Breads",
+      "Hard Drinks",
+      "Breakfast"
     ],
-    "categorical_features": [
-        "Product_Sugar_Content",
-        "Product_Type",
-        "Store_Id",
-        "Store_Size",
-        "Store_Location_City_Type",
-        "Store_Type",
-        "Product_Id_char",
-        "Product_Type_Category"
+    "Store_Id": [
+      "OUT004",
+      "OUT002",
+      "OUT001",
+      "OUT003"
+    ],
+    "Store_Size": [
+      "Medium",
+      "Small",
+      "High"
+    ],
+    "Store_Location_City_Type": [
+      "Tier 2",
+      "Tier 3",
+      "Tier 1"
+    ],
+    "Store_Type": [
+      "Supermarket Type2",
+      "Food Mart",
+      "Supermarket Type1",
+      "Departmental Store"
+    ],
+    "Product_Id_char": [
+      "FD",
+      "DR",
+      "NC"
+    ],
+    "Product_Type_Category": [
+      "Non Perishables",
+      "Perishables"
     ]
+  }
 }
